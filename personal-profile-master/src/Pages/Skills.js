@@ -1,20 +1,22 @@
 import React from 'react';
 import '../App.css'; 
+import './styles.css';
 const Skills = () => {
     return(
-        <div>
-           <div className="container mt-4">
-            <h2 className="text-center mb-4">Skills</h2>
-            <ol className="list-group list-group-numbered">
-                <li className="list-group-item">Java Core</li>
-                <li className="list-group-item">Java FX</li>
-                <li className="list-group-item">Spring Boot</li>
-                <li className="list-group-item">MySQL</li>
-                <li className="list-group-item">Bootstrap</li>
-            </ol>
-        </div>
+        <div className="text-center page-container">
+      <h2 className="display-4 mb-4">Skills</h2>
+      <ul className="list-unstyled">
+        <li>HTML and CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Git and Github</li>
+      </ul>
+      <div className="d-flex flex-column">
+        <Link to="/" className="btn btn-outline-light btn-lg my-2 animate-button">Go to Home</Link>
 
-        </div>
+      </div>
+    </div>
     )
 }
 

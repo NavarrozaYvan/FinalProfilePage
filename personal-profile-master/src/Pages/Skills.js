@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css'; 
 import './styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Skills = () => {
     return(
         <div className="text-center page-container">

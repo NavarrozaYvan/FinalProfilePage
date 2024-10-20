@@ -28,65 +28,47 @@ const Contact = () => {
     
     return(
 
-        <div className="container">
-         
-        <div className="row">
-          <div className="col-md-8 mx-auto rounded border p-4 m-4">
-            <h2 className="text-center mb-5">Contact</h2>
-            {alert.message && (
-            <div className={`alert alert-${alert.type} text-center`} role="alert">
-              {alert.message}
-            </div>
-          )}
-            <form onSubmit={handleSubmit}>
-              {/* Name Field */}
-              <div className="row mb-3">
-                <label htmlFor="name" className="col-sm-4 col-form-label">Name</label>
-                <div className="col-sm-8">
-                  <input 
-                    type="text" 
-                    className="form-control" 
-                    id="name"
-                    name ="name"
-                    value={formData.name}
-                    onChange={handleChange} 
-                  />
-                </div>
-              </div>
-      
-              {/* Email Field */}
-              <div className="row mb-3">
-                <label htmlFor="email" className="col-sm-4 col-form-label">Email address</label>
-                <div className="col-sm-8">
-                  <input 
-                    type="email" 
-                    className="form-control" 
-                    id="email"
-                    name= "email"
-                    aria-describedby="emailHelp"
-                    value={formData.email}
-                    onChange={handleChange} 
-                  />
-                  <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-                  
-                </div>
-              </div>
-      
-              {/* Message Field */}
-              <div className="row mb-3">
-                <label htmlFor="message" className="col-sm-4 col-form-label">Message</label>
-                <div className="col-sm-8">
-                  <textarea 
-                    className="form-control" 
-                    id="message"
-                    name="message" 
-                    rows="4"
-                    value={formData.message}
-                    onChange={handleChange} 
-                  ></textarea>
-                  
-                </div>
-              </div>
+     <div className="container page-container mt-5">
+      <h2 className="display-4 mb-4">Contact Me</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="form-control"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="form-control"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            className="form-control"
+            required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+        </div>
+        <button type="submit" className="btn btn-primary">Send Message</button>
+      </form>
       
               {/* Submit Button */}
               <button type="submit" className="btn btn-primary col-sm-12" >Submit</button>

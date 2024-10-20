@@ -1,0 +1,20 @@
+/* App.css */
+body {
+  font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+  background-color: #f0f8ff; /* Light background color */
+  color: #333; /* Dark text for contrast */
+}
+
+.App {
+  text-align: center; /* Center align text */
+}
+
+.container {
+  max-width: 800px; /* Limit container width for better readability */
+  margin: 0 auto; /* Center the container */
+}
+
+h1, h2 {
+  text-align: center; /* Center only the h1 and h2 elements */
+  margin: 20px 0; /* Add margin for spacing */
+}

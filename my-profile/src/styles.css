@@ -13,9 +13,12 @@ body {
   }
   
   .btn-outline-light {
-    width: 100%;
+    width: auto;
+    max-width: 250px; /* Limit button width */
+    margin: 10px auto; /* Center the buttons */
     border-color: #fff;
     color: #fff;
+    padding: 10px 20px;
   }
   
   .animate-button {

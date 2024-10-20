@@ -1,0 +1,32 @@
+body {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .page-container {
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
+  
+  h1, h2 {
+    color: #fff;
+  }
+  
+  .btn-outline-light {
+    width: auto;
+    max-width: 250px; /* Limit button width */
+    margin: 10px auto; /* Center the buttons */
+    border-color: #fff;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .animate-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .animate-button:hover {
+    transform: scale(1.05);
+    background-color: #555;
+  }
+  
